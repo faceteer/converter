@@ -4,6 +4,7 @@
   "description": "",
   "main": "converter.js",
   "scripts": {
+    "build:clean": "tsc -b --clean",
     "build": "tsc -b --clean && tsc -b",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
