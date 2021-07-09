@@ -320,15 +320,11 @@ function formatSet(data: any, options?: ConverterOptions) {
 	return map;
 }
 
-function toBuffer(value?: BinaryAttributeValue): Buffer | Uint8Array | Blob {
+function toBuffer(value?: BinaryAttributeValue): Buffer | Uint8Array {
 	if (!value) {
 		return Buffer.from('');
 	}
-	if (
-		value instanceof Buffer ||
-		value instanceof Uint8Array ||
-		value instanceof Blob
-	) {
+	if (value instanceof Buffer || value instanceof Uint8Array) {
 		return value;
 	}
 	return Buffer.from(value);
