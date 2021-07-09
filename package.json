@@ -1,6 +1,6 @@
 {
   "name": "@faceteer/converter",
-  "version": "1.0.0",
+  "version": "0.1.0~beta",
   "description": "",
   "main": "converter.js",
   "scripts": {
@@ -33,7 +33,6 @@
     "@types/node": "^15.6.1",
     "@typescript-eslint/eslint-plugin": "^4.26.0",
     "@typescript-eslint/parser": "^4.26.0",
-    "aws-sdk": "^2.919.0",
     "eslint": "^7.27.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.3.0",
