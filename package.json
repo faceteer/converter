@@ -6,6 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "attribute-value.d.ts",
+    "attribute-value.js",
+    "converter-options.d.ts",
+    "converter-options.js",
+    "converter.d.ts",
+    "converter.js",
+    "set.d.ts",
+    "set.js",
+    "types.d.ts",
+    "types.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/faceteer/converter.git"
