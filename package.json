@@ -1,6 +1,6 @@
 {
   "name": "@faceteer/converter",
-  "version": "0.1.0-alpha.2",
+  "version": "1.0.0",
   "description": "",
   "main": "converter.js",
   "scripts": {
