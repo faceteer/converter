@@ -97,8 +97,11 @@ export class Converter {
 	 *    stringSet: new DynamoDBSet(['foo', 'bar', 'baz'])
 	 *  });
 	 */
-	static marshall(data: Record<string, any>, options?: ConverterOptions) {
-		return this.input(data, options).M;
+	static marshall(
+		data: Record<string, any>,
+		options?: ConverterOptions,
+	): AttributeMap {
+		return this.input(data, options).M ?? {};
 	}
 
 	/**
