@@ -11,6 +11,9 @@
   "engines": {
     "node": ">=12.4.0"
   },
+  "keywords": [
+    "DynamoDB"
+  ],
   "files": [
     "attribute-value.d.ts",
     "attribute-value.js",
