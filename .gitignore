@@ -150,3 +150,4 @@ out.tap
 /*.d.ts
 /*.js
 !.eslintrc.js
+junit.xml
