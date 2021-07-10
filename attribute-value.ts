@@ -1,14 +1,14 @@
+interface Blob {}
 export type StringAttributeValue = string;
 export type StringSetAttributeValue = StringAttributeValue[];
 export type NumberAttributeValue = string;
 export type NumberSetAttributeValue = NumberAttributeValue[];
-export type BinaryAttributeValue = Buffer | Uint8Array | string;
+export type BinaryAttributeValue = Buffer | Uint8Array | Blob | string;
 export type BinarySetAttributeValue = BinaryAttributeValue[];
 export type MapAttributeValue = { [key: string]: AttributeValue };
 export type ListAttributeValue = AttributeValue[];
 export type NullAttributeValue = boolean;
 export type BooleanAttributeValue = boolean;
-
 export interface AttributeValue {
 	/**
 	 * An attribute of type String. For example:  "S": "Hello"

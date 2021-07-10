@@ -330,7 +330,7 @@ function toBuffer(value?: BinaryAttributeValue): Buffer | Uint8Array {
 	if (value instanceof Buffer || value instanceof Uint8Array) {
 		return value;
 	}
-	return Buffer.from(value);
+	return Buffer.from(value as any);
 }
 
 /**
