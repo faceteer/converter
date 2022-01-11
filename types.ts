@@ -1,4 +1,4 @@
-export function typeOf(data: any) {
+export function typeOf(data: any): string {
 	if (data instanceof Date) {
 		return 'Date';
 	}
