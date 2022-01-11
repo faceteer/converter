@@ -1,9 +1,5 @@
 import { getUnixTime } from 'date-fns';
-import {
-	AttributeMap,
-	AttributeValue,
-	BinaryAttributeValue,
-} from './attribute-value';
+import { AttributeMap, AttributeValue } from './attribute-value';
 import { ConverterOptions } from './converter-options';
 import { DynamoDBSet } from './set';
 import { typeOf } from './types';
@@ -320,10 +316,10 @@ function formatSet(data: any, options?: ConverterOptions) {
 				return value.toString();
 			});
 	}
-	return map;
+	return map as AttributeValue;
 }
 
-function toBuffer(value?: BinaryAttributeValue): Buffer | Uint8Array {
+function toBuffer(value?: Uint8Array): Buffer | Uint8Array {
 	if (!value) {
 		return Buffer.from('');
 	}
