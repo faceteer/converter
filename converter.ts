@@ -24,7 +24,10 @@ export class Converter {
 	 * @see Converter.marshall Converter.marshall to
 	 *    convert entire records (rather than individual attributes)
 	 */
-	static input(data: any, options?: ConverterOptions): AttributeValue {
+	static input(
+		data: any,
+		options?: ConverterOptions,
+	): AttributeValue | undefined {
 		options = options || {};
 		const type = typeOf(data);
 		if (type === 'Date') {
@@ -56,9 +59,6 @@ export class Converter {
 			// this value has a custom constructor
 			return formatMap(data, options);
 		}
-		return {
-			$unknown: [type, data],
-		};
 	}
 
 	/**
